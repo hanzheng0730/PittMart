@@ -1,2 +1,2 @@
 # PittMart
-An online shopping website
+An Online Shopping Website
