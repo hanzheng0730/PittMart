@@ -14,7 +14,7 @@ product_kinds: product_kind_id is the primary key. One product kind correspond t
 cart: table cart is a temporary table, which means the items in the cart will be removed after the customer makes payment. id is the primary key, c_id is the foreign key referring to the customer_id from table customers and p_id is the foreign key referring to the product_id from table products. One cart id corresponds to one product whose quantity can be more than one. One customer can have more than one cart id.
 For the design of our database schema, we chose to use one order_detail table instead of using one order table plus one order_detail table, which is more preferable based on the normalization rule. Our way is “denormalization”. The reason is that this way can reduce join and speed up searching when the database size is large.
 ## Front-End Design
-
+![Image description](https://github.com/hanzheng0730/PittMart/blob/master/images/FrontEndDesign.png)
 ## Data Analyses Functions in The Admin Page
 The admin is defined as the person who has the admin password. After entering the admin password, the admin will be able to add/delete/update products, delete/update customers, delete/update orders, and view below statistical results.
 a.	Sales volume comparison by product category in a pie chart
